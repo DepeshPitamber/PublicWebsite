@@ -6,13 +6,30 @@
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foundation for Sites</title>
+    <title>Card Devops</title>
     <link rel="stylesheet" href="{{root}}assets/css/app.css">
   </head>
-  <body>
+  <body><div class="top-bar">
+    <div class="top-bar-left">
+      <ul class="dropdown menu" data-dropdown-menu>
+        <li class="menu-text">Card Devops Team</li>
+        <li>
+          <a href="#">Open Source</a>
+          <ul class="menu vertical">
+            <li><a href="https://github.com/CardFrontendDevopsTeam">Github</a></li>
+            <li><a href="https://travis-ci.org/CardFrontendDevopsTeam">Travis</a></li>
+          </ul>
+        </li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Join Us</a></li>
+      </ul>
+    </div>
+  </div>
 
     {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}}
     {{> body}}
+
+
 
     <script src="{{root}}assets/js/app.js"></script>
   </body>
