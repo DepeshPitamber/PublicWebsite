@@ -13,3 +13,5 @@ deploy:
   secret_access_key: $S3_KEY
   bucket: "www.carddevops.co.za"
   local_dir: "dist"
+  skip_cleanup: true
+  acl: public_read
