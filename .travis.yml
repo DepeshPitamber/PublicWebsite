@@ -1,0 +1,15 @@
+language: node_js
+node_js:
+  - "node"
+
+before_script:
+  - npm install -g  foundation-cli
+
+script: foundation build
+
+deploy:
+  provider: s3
+  access_key_id: $S3_ID
+  secret_access_key: $S3_KEY
+  bucket: "www.carddevops.co.za"
+  local_dir: "dist"
